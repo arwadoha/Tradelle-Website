@@ -1,0 +1,327 @@
+html {
+    height: 100%;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  a {
+    color: #0D6EFD;
+  }
+  
+  body {
+    color: #233345;
+    font-family: 'Inter', sans-serif;
+    background-color: #F3F5F7;
+    height: 100%;
+  }
+  
+  .login-box {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .login-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+      border-bottom: #C8CCD0 solid 1px;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: white;
+  }
+  
+  .login-header > * {
+      flex: 0 0 calc(25% - (45px / 3 ));
+  }
+  
+  .content-box {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      flex-grow: 1;
+  
+      margin-top: 10px;
+      margin-bottom: 10px;
+  
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      grid-gap: 10px;
+      grid-template-areas:
+       "form preview";
+  }
+  
+  .bg-image {
+      opacity: 0.80;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 300px;
+      pointer-events: none;
+      z-index:-1;
+  }
+  
+  input::placeholder {
+      font-size: 13px;
+      font-weight: 300;
+  }
+  
+  .link-no-underline {
+      text-decoration: none;
+  }
+  
+  .tradelle-header-logo {
+      display: block;
+      height: 28px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  @media (max-width: 364px) {
+      .flex-spacer {
+          display: none;
+      }
+  }
+  
+  .tradelle-support-btn {
+      text-align: end;
+      display: block;
+      text-decoration: none;
+      color: #233345;
+      margin-left: 4px;
+      margin-right: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      align-self: center;
+  }
+  
+  #kc-content { /** Card content  */
+      margin-top: 20px;
+  }
+  
+  @media (min-width: 701px) and (max-width: 800px) {
+    .content-box {
+        grid-auto-columns: 1fr 0.75fr;
+    }
+  }
+  
+  @media (max-width: 700px) {
+      .content-box {
+          grid-template-areas:
+            "form"
+            "preview"
+      }
+  
+      .tradelle-dashboard-preview {
+          margin-top: 20px;
+      }
+  
+      .tradelle-form {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          clear: both;
+      }
+  }
+  
+  .tradelle-card {
+      max-width: 550px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .tradelle-dashboard-preview {
+      width: 100%;
+      object-fit: scale-down;
+      max-height: 500px;
+      object-position: right;
+  }
+  
+  .tradelle-input-error {
+      color: red;
+      font-size: 12px;
+  }
+  
+  .tradelle-input-wrapper {
+  }
+  
+  .tradelle-form-header {
+      font-size: 32px;
+      font-weight: 600;
+      text-align: center;
+  }
+  
+  @media (max-width: 700px) {
+      .tradelle-form-header {
+          font-size: 28px;
+          font-weight: 600;
+          text-align: center;
+      }
+  }
+  
+  .tradelle-form-subheader {
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      color: #4C5968;
+  }
+  
+  .tradelle-form-label {
+      font-size: 14px;
+      font-weight: bolder;
+      margin-bottom: 4px;
+  }
+  
+  .form-group {
+      margin-bottom: 10px;
+  }
+  
+  .tradelle-form-actions {
+      margin-top: 20px;
+  }
+  
+  .tradelle-form-checkbox {
+      font-size: 13px;
+      color: #4B4B4B;
+      font-weight: 400;
+  }
+  
+  .tradelle-form-text {
+      font-size: 13px;
+      color: #4B4B4B;
+      font-weight: 600;
+  }
+  
+  .forgot-password-btn {
+      font-weight: 500;
+  }
+  
+  .form-control {
+      border-color: #C8CCD0;
+  }
+  
+  #kc-form-options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+  }
+  
+  .tradelle-form-btn {
+      width: 100%;
+      background-color: #0066DD;
+      font-weight: 600;
+      font-size: 16px;
+  }
+  
+  .tradelle-form-btn-secondary {
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 10px;
+      background-color: white;
+      color: #0066DD;
+      font-weight: 600;
+      font-size: 16px;
+  }
+  
+  .form-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .form-footer-text {
+      margin-top: 1rem;
+      font-size: 14px;
+      color: #4C5968;
+  }
+  
+  @media (max-width: 575px) {
+      .form-footer-text {
+          text-align: center;
+      }
+  
+      .tradelle-form-options {
+          text-align: center;
+      }
+  }
+  
+  .tradelle-form-buttons {
+      margin-top: 10px;
+  }
+  
+  /** Social Providers */
+  
+  .social-providers-box {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+  
+  .btn-social {
+      display: flex;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      width: 100%;
+      padding: 0;
+      border-width: 2px;
+      -webkit-appearance: none;
+  }
+  
+  .btn-social:last-child {
+      margin-top: 0.5rem;
+  }
+  
+  .kc-social-icon-text {
+      display: block;
+      margin: auto;
+      text-align: center;
+  }
+  
+  .btn-social > img {
+      height: 42px;
+      float: left;
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+      margin: 0;
+  }
+  
+  .btn-google {
+      background-color: #4285F4;
+  }
+  
+  .btn-google:hover, .btn-google:focus {
+      background-color: #0b5ed7;
+      border-color: #0b5ed7;
+      color: white;
+  }
+  
+  .btn-icon-google {
+      background-color: white;
+      padding: 7px;
+  }
+  
+  .btn-facebook {
+      background-color: #3C5A9A;
+  }
+  
+  .btn-facebook:hover, .btn-facebook:focus {
+      border-color: #2d4370;
+      background-color: #2d4370;
+      color: white;
+  }
+  
+  .btn-icon-facebook {
+      background-color: white;
+      padding: 5px;
+  }
+  
+  .or-label {
+      font-size: 13px;
+      color: #4C5968;
+      font-weight: 300;
+  }
