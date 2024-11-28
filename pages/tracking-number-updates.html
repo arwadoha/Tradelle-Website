@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-template-name="index"	class=""
+>
+
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+	
+	<meta name="description" content="The #1 Product Research Tool, Supplier, and Automator for Sellers" />
+	<meta name="viewport" content="width=device-width" initial-scale="1" maximum-scale="5" />
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v23.9 (Yoast SEO v23.9) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Automatic Tracking Number Updates - Tradelle</title><link rel="preload" data-rocket-preload as="image" href="https://www.tradelle.io/wp-content/uploads/2024/05/desktop-4.webp" fetchpriority="high">
+	<meta name="description" content="Learn how Tradelle instantly updates tracking numbers and shares them upon order dispatch, keeping everyone in the loop at all times." />
+	<link rel="canonical" href="https://www.tradelle.io/tracking-number-updates/" />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Automatic Tracking Number Updates" />
+	<meta property="og:description" content="Learn how Tradelle instantly updates tracking numbers and shares them upon order dispatch, keeping everyone in the loop at all times." />
+	<meta property="og:url" content="https://www.tradelle.io/tracking-number-updates/" />
+	<meta property="og:site_name" content="Tradelle" />
+	<meta property="article:publisher" content="https://www.facebook.com/tradelle.io/" />
+	<meta property="article:modified_time" content="2024-09-19T07:44:45+00:00" />
+	<meta property="og:image" content="https://www.tradelle.io/wp-content/uploads/2024/03/diverse_mob.png.webp" />
+	<meta property="og:image:width" content="671" />
+	<meta property="og:image:height" content="526" />
+	<meta property="og:image:type" content="image/webp" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@tradelleio" />
+	<meta name="twitter:label1" content="Estimated reading time" />
+	<meta name="twitter:data1" content="5 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.tradelle.io/tracking-number-updates/","url":"https://www.tradelle.io/tracking-number-updates/","name":"Automatic Tracking Number Updates - Tradelle","isPartOf":{"@id":"https://www.tradelle.io/#website"},"datePublished":"2024-03-06T14:49:37+00:00","dateModified":"2024-09-19T07:44:45+00:00","description":"Learn how Tradelle instantly updates tracking numbers and shares them upon order dispatch, keeping everyone in the loop at all times.","breadcrumb":{"@id":"https://www.tradelle.io/tracking-number-updates/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.tradelle.io/tracking-number-updates/"]}]},{"@type":"BreadcrumbList","@id":"https://www.tradelle.io/tracking-number-updates/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.tradelle.io/"},{"@type":"ListItem","position":2,"name":"Automatic Tracking Number Updates"}]},{"@type":"WebSite","@id":"https://www.tradelle.io/#website","url":"https://www.tradelle.io/","name":"Tradelle.io","description":"The #1 Product Research Tool, Supplier, and Automator for Sellers","publisher":{"@id":"https://www.tradelle.io/#organization"},"alternateName":"Tradelle","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.tradelle.io/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://www.tradelle.io/#organization","name":"Tradelle Research Ltd","alternateName":"Tradelle","url":"https://www.tradelle.io/","logo":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.tradelle.io/#/schema/logo/image/","url":"https://tradelleprod.wpenginepowered.com/wp-content/uploads/2024/05/fdfeee.jpg","contentUrl":"https://tradelleprod.wpenginepowered.com/wp-content/uploads/2024/05/fdfeee.jpg","width":500,"height":500,"caption":"Tradelle Research Ltd"},"image":{"@id":"https://www.tradelle.io/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/tradelle.io/","https://x.com/tradelleio","https://www.tiktok.com/@tradelle","https://www.instagram.com/tradelle/","https://www.linkedin.com/company/tradelle-io/","https://discord.gg/tradelle","https://www.youtube.com/@tradelle","https://www.pinterest.com/tradelleio/"],"description":"Tradelle Research Ltd is a UK-based company that offers subscription-based access to various product research tools for online sellers (https://tradelleprod.wpenginepowered.com). Sellers can use these tools to evaluate various products’ profitability, popularity, market potential, competition density, and access many other metrics that help them make informed decisions about which products are worth importing and selling during which seasons. The product research tools and the respective metrics apply to all kinds of sellers (eBay, Amazon, Shopify, Etsy, WiX etc.), while for Shopify sellers, Tradelle also offers an automated product fulfillment service where it acts as a direct supplier of the products and automatically ships to its subscribers’ clients (people that purchase products from a Shopify store of a Tradelle subscriber). It is possible to test some basic functions for free right after signing up to experience some of the tools’ capabilities (“free trial”). Signing up with Tradelle, either through a monthly, yearly, or lifetime subscription, grants access to all functionalities. After subscribing, Tradelle offers a 7-day no-questions-asked money-back guarantee. During these seven days, it is possible for first-time subscribers to receive a full refund.","email":"info@tradelle.io","legalName":"Tradelle Research Ltd","foundingDate":"2022-11-04","vatID":"GB445734871","numberOfEmployees":{"@type":"QuantitativeValue","minValue":"11","maxValue":"50"},"ownershipFundingInfo":"https://www.tradelle.io/about-us/"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.tradelle.io/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='wpa-css-css' href='https://www.tradelle.io/wp-content/cache/min/1/wp-content/plugins/honeypot/includes/css/wpa.css?ver=1731924063' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='bodhi-svgs-attachment-css' href='https://www.tradelle.io/wp-content/cache/min/1/wp-content/plugins/svg-support/css/svgs-attachment.css?ver=1731924063' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='theme_styles-css' href='https://www.tradelle.io/wp-content/cache/min/1/wp-content/themes/tradelle/assets/css/app.css?ver=1731924063' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='custom_styles-css' href='https://www.tradelle.io/wp-content/cache/min/1/wp-content/themes/tradelle/style.css?ver=1731924063' type='text/css' media='all' />
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.tradelle.io/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" data-rocket-defer defer></script>
+<link rel="icon" href="https://www.tradelle.io/wp-content/uploads/2024/09/new-favicon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.tradelle.io/wp-content/uploads/2024/09/new-favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.tradelle.io/wp-content/uploads/2024/09/new-favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="https://www.tradelle.io/wp-content/uploads/2024/09/new-favicon-300x300.png" />
+		<style type="text/css" id="wp-custom-css">
+			.no-underline-button {
+    text-decoration: none !important;
+}
+
+.no-underline-button:hover {
+    text-decoration: none !important;
+}		</style>
+			<script nitro-exclude>
+if (window.location.search.includes('afmc')) {
+    var metaRobots = document.querySelector('meta[name="robots"]');
+    if (metaRobots) {
+        metaRobots.content = metaRobots.content.replace('index', 'noindex').replace('follow', 'nofollow');
+    } else {
+        document.head.insertAdjacentHTML('beforeend', '<meta name="robots" content="noindex, nofollow">');
+    }
+}
+</script>
+
+<script type="rocketlazyloadscript">window.dataLayer=window.dataLayer||[];(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T5KS2B7');</script>
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9f3fa6e4-718c-40ea-849d-ca1ab17c02d1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script><meta name="generator" content="WP Rocket 3.17.3.1" data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_oci wpr_image_dimensions wpr_minify_css wpr_desktop" /></head>
+
+<body id="body" class="page-template-default page page-id-15  body--shopify_banner_mod">
+
+			
+	<div class="shopify_banner js-shopify-banner">
+					<picture class="shopify_banner__bg">
+				<img width="1440" height="46" src="https://www.tradelle.io/wp-content/uploads/2024/09/shopify_banner_bg.jpg.webp" class="shopify_banner__bg_img" alt="" loading="lazy" decoding="async" srcset="https://www.tradelle.io/wp-content/uploads/2024/09/shopify_banner_bg.jpg.webp 1440w, https://www.tradelle.io/wp-content/uploads/2024/09/shopify_banner_bg.jpg-300x10.webp 300w, https://www.tradelle.io/wp-content/uploads/2024/09/shopify_banner_bg.jpg-1024x33.webp 1024w, https://www.tradelle.io/wp-content/uploads/2024/09/shopify_banner_bg.jpg-768x25.webp 768w" sizes="(max-width: 1440px) 100vw, 1440px" />			</picture>
+				<div class="section_in">
+			<div class="shopify_banner__row">
+				<div class="shopify_banner__column">
+					<div class="shopify_banner__content">
+													<div class="shopify_banner__picture">
+								<img width="20" height="20" src="https://www.tradelle.io/wp-content/uploads/2024/09/shopify-logo-svgrepo-com-1.svg" class="shopify_banner__img" alt="" loading="lazy" decoding="async" />							</div>
+												<div class="shopify_banner__title">Get a Done-For-You Shopify Store</div>
+					</div>
+				</div>
+				<div class="shopify_banner__column">
+											<a class="btn_v1 shopify_banner__button" href="https://www.tradelle.io/store" target="_blank">
+							Claim your store here							<span class="shopify_banner__button_icon">
+								<svg class="icon icon-external icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#external"></use></svg>							</span>
+						</a>
+									</div>
+			</div>
+		</div>
+		<div class="shopify_banner__close js-close-shopify-banner">
+			<svg class="icon icon-banner_close icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#banner_close"></use></svg>		</div>
+	</div>
+
+		
+<header class="header js-header">
+	<div class="header__in">
+		<div class="header__row">
+							<div class="header__logo">
+					<a class="header__logo_link" href="https://www.tradelle.io" aria-label="Tradelle">
+						<img width="1086" height="166" class="header__img" src="https://www.tradelle.io/wp-content/uploads/2024/03/logo_big.svg" alt="Tradelle">
+					</a>
+				</div>
+						<div class="header__content">
+				<nav class="header__body">
+											<ul class="header_list">
+														<li class="header__item header__item--submenu_mod js-header-submenu">
+																	<button class="header__link js-header-submenu-trigger" type="button">
+											<span class="header__icon">
+												<svg class="icon icon-chevron icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#chevron"></use></svg>											</span>
+										Why Tradelle?									</button>
+									<div class="header__submenu js-header-submenu-content">
+										<ul class="header_sublist">
+																							<li class="header_sublist__item">
+													<a class="header_sublist__link" href="https://www.tradelle.io/product-picks/">
+															<span class="header_sublist__icon">
+																<svg class="icon icon-fund-view icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#fund-view"></use></svg>															</span>
+														<span class="header_sublist__wrap">
+																<span
+																	class="header_sublist__title">Hand-Picked Products</span>
+																<span
+																	class="header_sublist__text">Discover profitable products</span>
+															</span>
+													</a>
+												</li>
+																							<li class="header_sublist__item">
+													<a class="header_sublist__link" href="https://www.tradelle.io/product-importer/">
+															<span class="header_sublist__icon">
+																<svg class="icon icon-select icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#select"></use></svg>															</span>
+														<span class="header_sublist__wrap">
+																<span
+																	class="header_sublist__title">1-Click Imports</span>
+																<span
+																	class="header_sublist__text">Import products to Shopify</span>
+															</span>
+													</a>
+												</li>
+																							<li class="header_sublist__item">
+													<a class="header_sublist__link" href="https://www.tradelle.io/automatic-orders/">
+															<span class="header_sublist__icon">
+																<svg class="icon icon-sync icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#sync"></use></svg>															</span>
+														<span class="header_sublist__wrap">
+																<span
+																	class="header_sublist__title">Store Automation</span>
+																<span
+																	class="header_sublist__text">Process orders automatically</span>
+															</span>
+													</a>
+												</li>
+																							<li class="header_sublist__item">
+													<a class="header_sublist__link" href="https://www.tradelle.io/tracking-number-updates/">
+															<span class="header_sublist__icon">
+																<svg class="icon icon-scan icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#scan"></use></svg>															</span>
+														<span class="header_sublist__wrap">
+																<span
+																	class="header_sublist__title">Tracking Number Updates</span>
+																<span
+																	class="header_sublist__text">View fulfillment updates</span>
+															</span>
+													</a>
+												</li>
+																							<li class="header_sublist__item">
+													<a class="header_sublist__link" href="https://www.tradelle.io/fulfillment-by-tradelle/">
+															<span class="header_sublist__icon">
+																<svg class="icon icon-cart icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#cart"></use></svg>															</span>
+														<span class="header_sublist__wrap">
+																<span
+																	class="header_sublist__title">Fulfillment by Tradelle</span>
+																<span
+																	class="header_sublist__text">Learn why Tradelle is your #1 supplier</span>
+															</span>
+													</a>
+												</li>
+																							<li class="header_sublist__item">
+													<a class="header_sublist__link" href="https://www.tradelle.io/product-sourcing/">
+															<span class="header_sublist__icon">
+																<svg class="icon icon-inbox icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#inbox"></use></svg>															</span>
+														<span class="header_sublist__wrap">
+																<span
+																	class="header_sublist__title">Product Sourcing</span>
+																<span
+																	class="header_sublist__text">Source with better pricing &amp; shipping</span>
+															</span>
+													</a>
+												</li>
+											
+										</ul>
+									</div>
+																</li>
+
+														<li class="header__item header__item--submenu_mod js-header-submenu">
+																	<button class="header__link js-header-submenu-trigger" type="button">
+											<span class="header__icon">
+												<svg class="icon icon-chevron icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#chevron"></use></svg>											</span>
+										Resources									</button>
+									<div class="header__submenu js-header-submenu-content">
+										<ul class="header_sublist">
+																							<li class="header_sublist__item">
+													<a class="header_sublist__link" href="https://www.tradelle.io/blog/">
+															<span class="header_sublist__icon">
+																<svg class="icon icon-read icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#read"></use></svg>															</span>
+														<span class="header_sublist__wrap">
+																<span
+																	class="header_sublist__title">Blog</span>
+																<span
+																	class="header_sublist__text">Latest Insights &amp; Tips</span>
+															</span>
+													</a>
+												</li>
+																							<li class="header_sublist__item">
+													<a class="header_sublist__link" href="https://www.tradelle.io/about-us/">
+															<span class="header_sublist__icon">
+																<svg class="icon icon-user icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#user"></use></svg>															</span>
+														<span class="header_sublist__wrap">
+																<span
+																	class="header_sublist__title">About Us</span>
+																<span
+																	class="header_sublist__text">Tradelle’s Team &amp; Mission</span>
+															</span>
+													</a>
+												</li>
+																							<li class="header_sublist__item">
+													<a class="header_sublist__link" href="https://www.tradelle.io/blog/category/templates/">
+															<span class="header_sublist__icon">
+																<svg class="icon icon-appstore icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#appstore"></use></svg>															</span>
+														<span class="header_sublist__wrap">
+																<span
+																	class="header_sublist__title">Templates</span>
+																<span
+																	class="header_sublist__text">Library of Templates</span>
+															</span>
+													</a>
+												</li>
+																							<li class="header_sublist__item">
+													<a class="header_sublist__link" href="https://help.tradelle.io/">
+															<span class="header_sublist__icon">
+																<svg class="icon icon-question icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#question"></use></svg>															</span>
+														<span class="header_sublist__wrap">
+																<span
+																	class="header_sublist__title">Support</span>
+																<span
+																	class="header_sublist__text">Help &amp; Troubleshooting</span>
+															</span>
+													</a>
+												</li>
+																							<li class="header_sublist__item">
+													<a class="header_sublist__link" href="https://www.tradelle.io/community/">
+															<span class="header_sublist__icon">
+																<svg class="icon icon-discord icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#discord"></use></svg>															</span>
+														<span class="header_sublist__wrap">
+																<span
+																	class="header_sublist__title">Discord Community</span>
+																<span
+																	class="header_sublist__text">Join Tradelle’s Discord</span>
+															</span>
+													</a>
+												</li>
+																							<li class="header_sublist__item">
+													<a class="header_sublist__link" href="https://www.tradelle.io/affiliate-program/">
+															<span class="header_sublist__icon">
+																<svg class="icon icon-dollar icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#dollar"></use></svg>															</span>
+														<span class="header_sublist__wrap">
+																<span
+																	class="header_sublist__title">Affiliate Program</span>
+																<span
+																	class="header_sublist__text">Apply for an Affiliate Spot</span>
+															</span>
+													</a>
+												</li>
+											
+										</ul>
+									</div>
+																</li>
+
+														<li class="header__item ">
+																	<a class="header__link"
+										 href="https://www.tradelle.io/pricing/">Pricing									</a>
+																</li>
+
+														<li class="header__item ">
+																	<a class="header__link"
+										 href="https://www.tradelle.io/about-us/">About									</a>
+																</li>
+
+													</ul>
+																<a class="btn_base btn_mobile" href="https://go.tradelle.io/signup"
+							 target=""
+							 aria-label="Get started for free">
+							Get started for free						</a>
+									</nav>
+				<div class="header__buttons">
+											<a class="btn_v3 btn_mobile" href="https://go.tradelle.io/signup">Log in</a>
+																<a class="btn_v1 btn_desktop"
+							 href="https://app.tradelle.io/"
+							 target=""
+							 aria-label="http://Log%20in">Log in</a>
+					
+											<a class="btn_base btn_desktop" href="https://go.tradelle.io/signup"
+							 target=""
+							 aria-label="Get started for free">
+							Get started for free						</a>
+									</div>
+				<button class="header__menu_trigger js-header-menu-trigger" type="button" aria-label="Toggle menu"><span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>
+	
+		<div class="wrapper js-wrapper">
+			<div class="base">
+				<div class="fake_largest_title" style="color: #fff;font-size: 50rem;opacity: .00001;pointer-events: none;position: fixed;">Tradelle</div>
+			<section class="section hero_v2 hero_v2--v5_mod">
+			<div class="section_in">
+				<div class="hero_v2__body">
+					
+					<div class="hero_v2__row">
+						<div class="hero_v2__column">
+							<div class="hero_v2__content">
+								<div class="heading heading--layout_3_mod">
+									<div class="heading__title">
+										<h1><strong>Automatic</strong> Tracking Number Updates
+</h1>
+
+																			</div>
+
+																			<div class="heading__text">
+											<h2>Tracking numbers are instantly updated and shared upon order dispatch, keeping everyone in the loop effortlessly.
+</h2>
+										</div>
+																	</div>
+								<div class="hero_v2__wrap">
+																												<div class="hero_v2__buttons">
+											<a class="btn_base" aria-label="Get started for free" target="_self" href="https://go.tradelle.io/signup">Get started for free</a>
+										</div>
+																	</div>
+							</div>
+						</div>
+
+						<div class="hero_v2__column">
+
+															<picture class="hero_v2__picture"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/05/desktop-4.webp" type="image/webp"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/05/desktop-4.png" type="image/png"><img fetchpriority="high" decoding="async" class="hero_v2__img" src="https://www.tradelle.io/wp-content/uploads/2024/05/desktop-4.png" alt="" loading="lazy" /></picture>													</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+
+			
+							<section class="section feature feature--reverse_mod ">
+					<div class="section_in">
+						<div class="feature__row">
+
+															<div class="feature__column feature__column--image_mod">
+									<picture class="feature__img_w"><source media="(min-width:768px)" srcset="https://www.tradelle.io/wp-content/uploads/2024/05/tracking_f.webp" type="image/webp"><source media="(max-width:767px)" srcset="https://www.tradelle.io/wp-content/uploads/2024/05/tracking_f_mobil.webp" type="image/webp"><source media="(max-width:767px)" srcset="https://www.tradelle.io/wp-content/uploads/2024/05/tracking_f_mobil.png" type="image/png"><img decoding="async" class="feature__img_in" src="https://www.tradelle.io/wp-content/uploads/2024/05/tracking_f.png" alt="" loading="lazy" /></picture>								</div>
+							
+							<div class="feature__column feature__column--content_mod">
+								<div class="feature__content">
+									<div class="heading">
+																					<div class="heading__subtitle">Automated updates</div>
+										
+										<div class="heading__title"><h2>Keeping Customers Informed: Tracking Updates</h2></div>
+
+																					<div class="heading__text"><h3>Upon receiving tracking information, customers are promptly notified via Shopify, keeping them informed and engaged.
+</h3></div>
+																			</div>
+
+																			<div class="feature__btn_w">
+											<a
+												class="btn_base"
+												aria-label="Get started for free"
+												target="_self"
+												href="https://go.tradelle.io/signup"
+											>
+												Get started for free											</a>
+										</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			
+			
+
+			<section class="section values values--v2_mod">
+			<div class="section_in">
+				<div class="heading">
+											<div class="heading__subtitle">See the value</div>
+																<div class="heading__title"><h2>What Tradelle&#039;s next-level tracking numbers come with</h2></div>
+									</div>
+				
+				<ul class="values__list">
+																		<li class="values__item">
+								<div class="feature_card ">
+																	
+																			<div class="feature_card__icon">
+											<div class="colored_icon ">
+												<svg class="icon icon-instant icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#instant"></use></svg>											</div>
+										</div>
+																		
+																			<h3 class="feature_card__title">Instant Updates</h3>
+																		
+																			<div class="feature_card__text">
+											<p>The tracking number is immediately updated as soon as an order is dispatched. This means no delays in knowing where an item is.</p>
+										</div>
+																	</div>
+							</li>
+																								<li class="values__item">
+								<div class="feature_card ">
+																	
+																			<div class="feature_card__icon">
+											<div class="colored_icon ">
+												<svg class="icon icon-bell icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#bell"></use></svg>											</div>
+										</div>
+																		
+																			<h3 class="feature_card__title">Direct Notifications</h3>
+																		
+																			<div class="feature_card__text">
+											<p>Customers automatically get tracking information through Shopify. This keeps them in the know and reduces the number of queries you receive about order statuses.</p>
+										</div>
+																	</div>
+							</li>
+																								<li class="values__item">
+								<div class="feature_card ">
+																	
+																			<div class="feature_card__icon">
+											<div class="colored_icon ">
+												<svg class="icon icon-smile-2 icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#smile-2"></use></svg>											</div>
+										</div>
+																		
+																			<h3 class="feature_card__title">Peace of Mind</h3>
+																		
+																			<div class="feature_card__text">
+											<p>Knowing the status of an order brings peace of mind to both you and your customers. It&#8217;s all about trust and transparency.</p>
+										</div>
+																	</div>
+							</li>
+																								<li class="values__item">
+								<div class="feature_card ">
+																	
+																			<div class="feature_card__icon">
+											<div class="colored_icon ">
+												<svg class="icon icon-clock-colored-2 icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#clock-colored-2"></use></svg>											</div>
+										</div>
+																		
+																			<h3 class="feature_card__title">Saved Time</h3>
+																		
+																			<div class="feature_card__text">
+											<p>Automated updates save you from the manual task of sending out tracking numbers, freeing up your time for other important business activities.</p>
+										</div>
+																	</div>
+							</li>
+																								<li class="values__item">
+								<div class="feature_card ">
+																	
+																			<div class="feature_card__icon">
+											<div class="colored_icon ">
+												<svg class="icon icon-smile icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#smile"></use></svg>											</div>
+										</div>
+																		
+																			<h3 class="feature_card__title">Customer Satisfaction</h3>
+																		
+																			<div class="feature_card__text">
+											<p>Customers appreciate timely updates. When they know where their purchase is, they&#8217;re more likely to have a positive shopping experience.</p>
+										</div>
+																	</div>
+							</li>
+																								<li class="values__item">
+								<div class="feature_card ">
+																	
+																			<div class="feature_card__icon">
+											<div class="colored_icon ">
+												<svg class="icon icon-rocket-3 icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#rocket-3"></use></svg>											</div>
+										</div>
+																		
+																			<h3 class="feature_card__title">Brand Reliability</h3>
+																		
+																			<div class="feature_card__text">
+											<p>Providing immediate tracking information helps reinforce your brand&#8217;s reliability and professionalism, encouraging repeat business and positive reviews.</p>
+										</div>
+																	</div>
+							</li>
+																		
+				</ul>
+				
+							</div>
+		</section>
+	
+
+			<section class="section banner banner_v1_mod">
+          <div class="section_in banner__in">
+            <div class="banner__row">
+              <div class="banner__column">
+
+																	<div class="banner__decor">
+										<div class="banner__icon">
+											<svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>										</div>
+									</div>
+								
+                <div class="banner__content">
+									<h2>Don’t dropship like it’s 2017</h2>
+<p>Imagine someone asks you who your supplier is, and then you have to tell them it’s a private agent, or AliExpress, or an automation tool that simply buys from AliExpress for you. It’s 2024. Your customers, your revenues, and your profits will thank you.</p>
+
+																			<a class="btn_base" aria-label="Get started for free" target="_self" href="https://go.tradelle.io/signup">Get started for free</a>
+									                </div>
+              </div>
+
+															<div class="banner__column">
+									<picture class="banner__picture"><source media="(min-width:1024px)" srcset="https://www.tradelle.io/wp-content/uploads/2024/05/cta.webp" type="image/webp"><source media="(max-width:1023px)" srcset="https://www.tradelle.io/wp-content/uploads/2024/05/cta_m.webp" type="image/webp"><source media="(max-width:1023px)" srcset="https://www.tradelle.io/wp-content/uploads/2024/05/cta_m.png" type="image/png"><img decoding="async" class="banner__img" src="https://www.tradelle.io/wp-content/uploads/2024/05/cta.png" alt="" loading="lazy" /></picture>								</div>
+							            </div>
+          </div>
+        </section>
+	
+
+        <section class="section testimonials js-testimonials  js-stars-wrap" data-height="522">
+      <div class="section_in">
+        <div class="heading">
+                          <div class="heading__subtitle">Testimonials</div>
+                                      <div class="heading__title"><h2>What other entrepreneurs say about Tradelle</h2></div>
+                    </div>
+          
+
+        <div class="testimonials_v2__list_w js-testimonials-list">
+          <ul class="testimonials_v2__list">
+                                                  <li class="testimonials_v2__item">
+                    <div class="testimonials_item_v2">
+                      <div class="testimonials_item_v2__head">
+                          <picture class="testimonials_item_v2__avatar"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/05/3.webp" type="image/webp"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/05/3-2.jpg" type="image/jpeg"><img decoding="async" class="testimonials_item_v2__avatar_img" src="https://www.tradelle.io/wp-content/uploads/2024/05/3-2.jpg" alt="" loading="lazy" /></picture>                        <div class="testimonials_item_v2__name">Timo Herzog</div>
+                      </div>
+                      <div class="testimonials_item_v2__text">
+                          
+<p>«After 2 years in e-commerce and little success, I realized that accurate store trackers or spy tools simply don&#8217;t exist. Success in dropshipping requires proper research and a trustworthy supplier to do the job. Tradelle was the game-changer I needed. Real, transparent, university-level research coupled with own logistics and automation. It made me go from hustler to entrepreneur in under 3 months.»</p>
+                      </div>
+                      <ul class="testimonials_item_v2__rating">
+                                                      <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                    </ul>
+
+                    </div>
+                  </li>
+                                    <li class="testimonials_v2__item">
+                    <div class="testimonials_item_v2">
+                      <div class="testimonials_item_v2__head">
+                          <picture class="testimonials_item_v2__avatar"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/bc8a.webp" type="image/webp"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/bc8a.png" type="image/png"><img decoding="async" class="testimonials_item_v2__avatar_img" src="https://www.tradelle.io/wp-content/uploads/2024/03/bc8a.png" alt="" loading="lazy" /></picture>                        <div class="testimonials_item_v2__name">Mario Giordano</div>
+                      </div>
+                      <div class="testimonials_item_v2__text">
+                          
+<p>«Tradelle is very beginner-friendly. For dropshipping beginners, this is by far the best all-in-one solution. Products are sent out in a neutral package, so the end-customer doesn&#8217;t see it&#8217;s dropshipped. For professionals like myself, it still lacks a branding option. According to support, they&#8217;re working on it. However, it&#8217;s still the best for research and fulfillment of products that don&#8217;t require branding.»</p>
+                      </div>
+                      <ul class="testimonials_item_v2__rating">
+                                                      <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star testimonials_item_v2__star--opacity_mod">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                    </ul>
+
+                    </div>
+                  </li>
+                                    <li class="testimonials_v2__item">
+                    <div class="testimonials_item_v2">
+                      <div class="testimonials_item_v2__head">
+                          <picture class="testimonials_item_v2__avatar"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/b059.webp" type="image/webp"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/b059.png" type="image/png"><img decoding="async" class="testimonials_item_v2__avatar_img" src="https://www.tradelle.io/wp-content/uploads/2024/03/b059.png" alt="" loading="lazy" /></picture>                        <div class="testimonials_item_v2__name">Lisa-Marie Meskendahl</div>
+                      </div>
+                      <div class="testimonials_item_v2__text">
+                          
+<p>«Great for handling multiple stores simultaneously and testing products quickly. There&#8217;s nothing comparable out there. For dropshipping, there is, but for staying lean and agile and not overinvesting, there isn&#8217;t.»</p>
+                      </div>
+                      <ul class="testimonials_item_v2__rating">
+                                                      <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                    </ul>
+
+                    </div>
+                  </li>
+                                    <li class="testimonials_v2__item">
+                    <div class="testimonials_item_v2">
+                      <div class="testimonials_item_v2__head">
+                          <picture class="testimonials_item_v2__avatar"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/05/1.webp" type="image/webp"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/06/1-3.jpg" type="image/jpeg"><img decoding="async" class="testimonials_item_v2__avatar_img" src="https://www.tradelle.io/wp-content/uploads/2024/06/1-3.jpg" alt="" loading="lazy" /></picture>                        <div class="testimonials_item_v2__name">Farid Saadlou</div>
+                      </div>
+                      <div class="testimonials_item_v2__text">
+                          
+<p>«Reliable worldwide shipping, full automation, transparent research. The product trends tool is especially great. I&#8217;m always ready to react to tomorrow&#8217;s demands, and the seasonality analysis helps me know when to sell what.»</p>
+                      </div>
+                      <ul class="testimonials_item_v2__rating">
+                                                      <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                    </ul>
+
+                    </div>
+                  </li>
+                                    <li class="testimonials_v2__item">
+                    <div class="testimonials_item_v2">
+                      <div class="testimonials_item_v2__head">
+                          <picture class="testimonials_item_v2__avatar"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/9c68.webp" type="image/webp"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/9c68.png" type="image/png"><img decoding="async" class="testimonials_item_v2__avatar_img" src="https://www.tradelle.io/wp-content/uploads/2024/03/9c68.png" alt="" loading="lazy" /></picture>                        <div class="testimonials_item_v2__name">Agnesa Veliu</div>
+                      </div>
+                      <div class="testimonials_item_v2__text">
+                          
+<p>«When I got into e-commerce many years ago, the complexity of customs, imports and tax accounting quickly made me lose interest. I&#8217;ve always been good at marketing but bad at operations, especially legal matters. Tradelle fixed these issues for me, and now I&#8217;m running and growing my store!»</p>
+                      </div>
+                      <ul class="testimonials_item_v2__rating">
+                                                      <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                    </ul>
+
+                    </div>
+                  </li>
+                                    <li class="testimonials_v2__item">
+                    <div class="testimonials_item_v2">
+                      <div class="testimonials_item_v2__head">
+                          <picture class="testimonials_item_v2__avatar"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/b3f3.webp" type="image/webp"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/b3f3.png" type="image/png"><img decoding="async" class="testimonials_item_v2__avatar_img" src="https://www.tradelle.io/wp-content/uploads/2024/03/b3f3.png" alt="" loading="lazy" /></picture>                        <div class="testimonials_item_v2__name">Marc Malen</div>
+                      </div>
+                      <div class="testimonials_item_v2__text">
+                          
+<p>«What started as a side hustle turned into a company with now eight employees. Tradelle was with me all the way and is still my go-to product research and fulfillment tool. I experiment with other suppliers, but it just requires so much micromanagement. With Tradelle I know that everything will go smoothly.»</p>
+                      </div>
+                      <ul class="testimonials_item_v2__rating">
+                                                      <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                    </ul>
+
+                    </div>
+                  </li>
+                                    <li class="testimonials_v2__item">
+                    <div class="testimonials_item_v2">
+                      <div class="testimonials_item_v2__head">
+                          <picture class="testimonials_item_v2__avatar"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/b810.webp" type="image/webp"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/b810.png" type="image/png"><img decoding="async" class="testimonials_item_v2__avatar_img" src="https://www.tradelle.io/wp-content/uploads/2024/03/b810.png" alt="" loading="lazy" /></picture>                        <div class="testimonials_item_v2__name">Dima Voronov</div>
+                      </div>
+                      <div class="testimonials_item_v2__text">
+                          
+<p>«I connected my stores. It just works. Most all-in-one tools are just automators that connect you with dubious Chinese agents or buy from AliExpress for you. I love that Tradelle is an actual supplier. VAT invoices, CE certificates, and advice from native English speakers with obvious e-commerce experience. No more begging agents or AliExpress sellers who don&#8217;t know what an invoice is.»</p>
+                      </div>
+                      <ul class="testimonials_item_v2__rating">
+                                                      <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                    </ul>
+
+                    </div>
+                  </li>
+                                    <li class="testimonials_v2__item">
+                    <div class="testimonials_item_v2">
+                      <div class="testimonials_item_v2__head">
+                          <picture class="testimonials_item_v2__avatar"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/4c25.webp" type="image/webp"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/4c25.png" type="image/png"><img decoding="async" class="testimonials_item_v2__avatar_img" src="https://www.tradelle.io/wp-content/uploads/2024/03/4c25.png" alt="" loading="lazy" /></picture>                        <div class="testimonials_item_v2__name">Sheri Manuro</div>
+                      </div>
+                      <div class="testimonials_item_v2__text">
+                          
+<p>«I really like the straightforward tools. No unnecessary upsells, ads, the need for coaching or any other subscriptions are necessary to make Tradelle work.»</p>
+                      </div>
+                      <ul class="testimonials_item_v2__rating">
+                                                      <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                    </ul>
+
+                    </div>
+                  </li>
+                                    <li class="testimonials_v2__item">
+                    <div class="testimonials_item_v2">
+                      <div class="testimonials_item_v2__head">
+                          <picture class="testimonials_item_v2__avatar"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/05/4.webp" type="image/webp"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/05/4-2.jpg" type="image/jpeg"><img decoding="async" class="testimonials_item_v2__avatar_img" src="https://www.tradelle.io/wp-content/uploads/2024/05/4-2.jpg" alt="" loading="lazy" /></picture>                        <div class="testimonials_item_v2__name">Dominic Galagher</div>
+                      </div>
+                      <div class="testimonials_item_v2__text">
+                          
+<p>«Tradelle has hands-down the best support! They care, they ask questions, they advise you, they want you to succeed. I&#8217;m always baffled by the sheer quality of it.»</p>
+                      </div>
+                      <ul class="testimonials_item_v2__rating">
+                                                      <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                    </ul>
+
+                    </div>
+                  </li>
+                                    <li class="testimonials_v2__item">
+                    <div class="testimonials_item_v2">
+                      <div class="testimonials_item_v2__head">
+                          <picture class="testimonials_item_v2__avatar"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/sjJK.webp" type="image/webp"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/sjJK.png" type="image/png"><img decoding="async" class="testimonials_item_v2__avatar_img" src="https://www.tradelle.io/wp-content/uploads/2024/03/sjJK.png" alt="" loading="lazy" /></picture>                        <div class="testimonials_item_v2__name">Matan Akal</div>
+                      </div>
+                      <div class="testimonials_item_v2__text">
+                          
+<p>«It has saved me a lot of time. Everything is perfectly automated.»</p>
+                      </div>
+                      <ul class="testimonials_item_v2__rating">
+                                                      <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                    </ul>
+
+                    </div>
+                  </li>
+                                    <li class="testimonials_v2__item">
+                    <div class="testimonials_item_v2">
+                      <div class="testimonials_item_v2__head">
+                          <picture class="testimonials_item_v2__avatar"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/99c6.webp" type="image/webp"><source  srcset="https://www.tradelle.io/wp-content/uploads/2024/03/99c6.png" type="image/png"><img decoding="async" class="testimonials_item_v2__avatar_img" src="https://www.tradelle.io/wp-content/uploads/2024/03/99c6.png" alt="" loading="lazy" /></picture>                        <div class="testimonials_item_v2__name">Omar Mallo</div>
+                      </div>
+                      <div class="testimonials_item_v2__text">
+                          
+<p>«Tradelle is the best supplier for my dropshipping stores. It&#8217;s reliable, fast, has great product choice, and has an even better inquiry function.»</p>
+                      </div>
+                      <ul class="testimonials_item_v2__rating">
+                                                      <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                          <li class="testimonials_item_v2__star ">
+                                <svg class="icon icon-star icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#star"></use></svg>                            </li>
+                                                    </ul>
+
+                    </div>
+                  </li>
+                                          </ul>
+        </div>
+        <div class="testimonials_v2__btn_w">
+          <button class="btn_v1 js-testimonials-btn" type="button">See all testimonials</button>
+        </div>
+      </div>
+    </section>
+    
+
+			<section class="section faq js-faq">
+			<div class="section_in">
+				<div class="heading">
+											<div class="heading__subtitle">IMMEDIATE Answers</div>
+																<div class="heading__title"><h2>Frequently Asked Questions</h2></div>
+									</div>
+				<ul class="faq__list">
+																		<li class="faq__item">
+								<div class="faq_item">
+									<button class="faq_item__head js-faq-trigger" type="button">
+										<span class="faq_item__icon">
+											<svg class="icon icon-caret icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#caret"></use></svg>										</span>
+										<h3 class="faq_item__title">How do I get started with Tradelle?</h3>
+									</button>
+																			<div class="faq_item__body">
+											<div class="faq_item__content">
+											<!-- wp:paragraph -->
+<p>To get started you can sign up to Tradelle&#8217;s free 7-day trial here: <a href="https://go.tradelle.io/signup" target="_blank" rel="noreferrer noopener">https://go.tradelle.io/signup</a></p>
+<!-- /wp:paragraph -->											</div>
+										</div>
+																	</div>
+							</li>
+																								<li class="faq__item">
+								<div class="faq_item">
+									<button class="faq_item__head js-faq-trigger" type="button">
+										<span class="faq_item__icon">
+											<svg class="icon icon-caret icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#caret"></use></svg>										</span>
+										<h3 class="faq_item__title">Is there a free trial?</h3>
+									</button>
+																			<div class="faq_item__body">
+											<div class="faq_item__content">
+											<!-- wp:paragraph -->
+<p>Yes, Tradelle offers a 7-day free trial. In addition, you have a &#8216;no questions asked&#8217; 7-day money-back guarantee as well.</p>
+<!-- /wp:paragraph -->											</div>
+										</div>
+																	</div>
+							</li>
+																								<li class="faq__item">
+								<div class="faq_item">
+									<button class="faq_item__head js-faq-trigger" type="button">
+										<span class="faq_item__icon">
+											<svg class="icon icon-caret icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#caret"></use></svg>										</span>
+										<h3 class="faq_item__title">Can I cancel anytime?</h3>
+									</button>
+																			<div class="faq_item__body">
+											<div class="faq_item__content">
+											<!-- wp:paragraph -->
+<p>Yes, you can. There are no contractual obligations beyond your current billing cycle. When you cancel your subscription, it will end following the current term with no further charges. If you are a new user, all plans have a 7-day money-back guarantee. Within this 7-day period, in addition to your cancellation, you can request a full refund.</p>
+<!-- /wp:paragraph -->											</div>
+										</div>
+																	</div>
+							</li>
+																								<li class="faq__item">
+								<div class="faq_item">
+									<button class="faq_item__head js-faq-trigger" type="button">
+										<span class="faq_item__icon">
+											<svg class="icon icon-caret icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#caret"></use></svg>										</span>
+										<h3 class="faq_item__title">Is Tradelle suitable for beginners?</h3>
+									</button>
+																			<div class="faq_item__body">
+											<div class="faq_item__content">
+											<!-- wp:paragraph -->
+<p>Absolutely! Tradelle does the work for you, and it doesn’t matter where you are on your seller journey. Tradelle&#8217;s support has you covered.</p>
+<!-- /wp:paragraph -->											</div>
+										</div>
+																	</div>
+							</li>
+																								<li class="faq__item">
+								<div class="faq_item">
+									<button class="faq_item__head js-faq-trigger" type="button">
+										<span class="faq_item__icon">
+											<svg class="icon icon-caret icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#caret"></use></svg>										</span>
+										<h3 class="faq_item__title">Is Tradelle just a dropshipping product research tool?</h3>
+									</button>
+																			<div class="faq_item__body">
+											<div class="faq_item__content">
+											<!-- wp:paragraph -->
+<p>No. Tradelle is also a dropshipping supplier with a built-in automated fulfillment feature, meaning all incoming orders in your store will be fulfilled and shipped out automatically. Tradelle&#8217;s product research isn&#8217;t ordinary, either. It uses one of the most advanced product web crawlers available, written by in-house big data and AI specialists. It can analyze trends and data to reveal true and validated winning products. There is no other product research service like it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->											</div>
+										</div>
+																	</div>
+							</li>
+																								<li class="faq__item">
+								<div class="faq_item">
+									<button class="faq_item__head js-faq-trigger" type="button">
+										<span class="faq_item__icon">
+											<svg class="icon icon-caret icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#caret"></use></svg>										</span>
+										<h3 class="faq_item__title">What makes Tradelle’s product picks special?</h3>
+									</button>
+																			<div class="faq_item__body">
+											<div class="faq_item__content">
+											<!-- wp:paragraph -->
+<p>Tradelle Research Ltd specializes in product research. Before adding any product, a team of data analysts and researchers ensures that the products are new and have high engagement potential on social media. All added products are tested, validated, and yield good results.</p>
+<!-- /wp:paragraph -->											</div>
+										</div>
+																	</div>
+							</li>
+																								<li class="faq__item">
+								<div class="faq_item">
+									<button class="faq_item__head js-faq-trigger" type="button">
+										<span class="faq_item__icon">
+											<svg class="icon icon-caret icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#caret"></use></svg>										</span>
+										<h3 class="faq_item__title">Which forms of payment do you accept?</h3>
+									</button>
+																			<div class="faq_item__body">
+											<div class="faq_item__content">
+											<!-- wp:paragraph -->
+<p>Tradelle uses secure Stripe payment processing and accepts Visa, Mastercard, American Express, and more. If you don’t have a credit card, you can pay via PayPal as well.</p>
+<!-- /wp:paragraph -->											</div>
+										</div>
+																	</div>
+							</li>
+															</ul>
+			</div>
+		</section>
+	
+
+			<section class="section cta">
+			<div class="section_in">
+				<div class="cta__card">
+					<picture class="cta__pic"><source media="(min-width:1024px)" srcset="https://www.tradelle.io/wp-content/uploads/2024/03/bg.jpg-scaled.webp" type="image/webp"><source media="(max-width:1023px)" srcset="https://www.tradelle.io/wp-content/uploads/2024/03/bg_mob.jpg.webp" type="image/webp"><source media="(max-width:1023px)" srcset="https://www.tradelle.io/wp-content/uploads/2024/03/bg_mob.jpg" type="image/jpeg"><img decoding="async" class="cta__img" src="https://www.tradelle.io/wp-content/uploads/2024/03/bg-scaled.jpg" alt="some image" loading="lazy" /></picture>					<div class="cta__content">
+						<div class="cta__title"><h2>Try <strong>Tradelle</strong> today</h2>
+</div>
+
+													<h3 class="cta__text">Try Tradelle risk-free for 7 days. Cancel anytime.</h3>
+						
+													<div class="cta__btn_w">
+								<a
+									class="btn_base cta__btn"
+									aria-label="Get started for free"
+									target="_self"
+									href="https://go.tradelle.io/signup"
+								>
+									Get started for free								</a>
+							</div>
+											</div>
+				</div>
+			</div>
+		</section>
+	</div><!-- .base# -->
+
+<footer class="footer">
+	<div class="section_in">
+		<div class="footer__body">
+							<div class="footer__logo footer__logo--mobile_mod">
+					<a class="footer__link_logo" href="https://www.tradelle.io">
+						<picture class="footer__logo_img_w">
+							<img width="1" height="1" src="https://www.tradelle.io/wp-content/uploads/2024/03/logo-1.svg" class="footer__logo_img_in" alt="Tradelle" loading="lazy" decoding="async" />						</picture>
+					</a>
+				</div>
+				<div class="footer__text footer__text--mobile_mod">
+					<p>Tradelle Research Ltd, 71-75 Shelton Street, Covent Garden, WC2H 9JQ, London, United Kingdom</p>
+<p>Company number: 14462289</p>
+				</div>
+						<div class="footer__row">
+				<div class="footer__col footer__col--info_mod">
+					<div class="footer__info_content">
+						<div class="footer__info_top">
+															<div class="footer__logo footer__logo--desktop_mod">
+									<a class="footer__link_logo" href="https://www.tradelle.io">
+										<picture class="footer__logo_img_w">
+											<img width="1" height="1" src="https://www.tradelle.io/wp-content/uploads/2024/03/logo-1.svg" class="footer__logo_img_in" alt="Tradelle" loading="lazy" decoding="async" />										</picture>
+									</a>
+								</div>
+														<div class="footer__text footer__text--desktop_mod">
+								<p>Tradelle Research Ltd, 71-75 Shelton Street, Covent Garden, WC2H 9JQ, London, United Kingdom</p>
+<p>Company number: 14462289</p>
+							</div>
+						</div>
+						<div class="footer__info_bottom">
+							<div class="footer__social">
+								<ul class="social_list">
+																			<li class="social_item">
+											<a class="social_link" href="https://www.tiktok.com/@tradelle" target="_blank" rel="nofollow" aria-label="link to tiktok">
+												<svg class="icon icon-tiktok icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#tiktok"></use></svg>											</a>
+										</li>
+																												<li class="social_item">
+											<a class="social_link" href="https://www.instagram.com/tradelle/" target="_blank" rel="nofollow" aria-label="link to instagram">
+												<svg class="icon icon-instagram icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#instagram"></use></svg>											</a>
+										</li>
+																												<li class="social_item">
+											<a class="social_link" href="https://www.facebook.com/tradelle.io/" target="_blank" rel="nofollow" aria-label="link to facebook">
+												<svg class="icon icon-facebook icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#facebook"></use></svg>											</a>
+										</li>
+																												<li class="social_item">
+											<a class="social_link" href="https://www.linkedin.com/company/tradelle-io/" target="_blank" rel="nofollow" aria-label="link to linkedin">
+												<svg class="icon icon-linkedin icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#linkedin"></use></svg>											</a>
+										</li>
+																												<li class="social_item">
+											<a class="social_link" href="https://discord.gg/tradelle" target="_blank" rel="nofollow" aria-label="link to discord_2">
+												<svg class="icon icon-discord_2 icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#discord_2"></use></svg>											</a>
+										</li>
+																												<li class="social_item">
+											<a class="social_link" href="https://www.youtube.com/@tradelle" target="_blank" rel="nofollow" aria-label="link to youtube">
+												<svg class="icon icon-youtube icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#youtube"></use></svg>											</a>
+										</li>
+																												<li class="social_item">
+											<a class="social_link" href="https://www.pinterest.com/tradelleio/" target="_blank" rel="nofollow" aria-label="link to pinterest">
+												<svg class="icon icon-pinterest icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#pinterest"></use></svg>											</a>
+										</li>
+																												<li class="social_item">
+											<a class="social_link" href="https://x.com/tradelleio" target="_blank" rel="nofollow" aria-label="link to x">
+												<svg class="icon icon-x icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#x"></use></svg>											</a>
+										</li>
+																	</ul>
+							</div>
+							<a class="footer__status" href="https://stats.uptimerobot.com/5MAXxCMMWW" target="_blank" rel="nofollow">
+								<div class="footer__text_status">Tradelle Status</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__col footer__col--nav_mod">
+					<nav class="footer__nav">
+													<div class="footer__col_nav">
+								<h3 class="footer__title">Features</h3>
+								<ul id="menu-footer-features-menu" class="footer__nav_list"><li id="menu-item-906" class="menu-item menu-item-type-post_type menu-item-object-page footer__nav_item footer__nav_item-906"><a class="footer__nav_link"  href="https://www.tradelle.io/product-picks/">Hand-Picked Products</a></li>
+<li id="menu-item-907" class="menu-item menu-item-type-post_type menu-item-object-page footer__nav_item footer__nav_item-907"><a class="footer__nav_link"  href="https://www.tradelle.io/product-importer/">1-Click Import</a></li>
+<li id="menu-item-908" class="menu-item menu-item-type-post_type menu-item-object-page footer__nav_item footer__nav_item-908"><a class="footer__nav_link"  href="https://www.tradelle.io/automatic-orders/">Store Automation</a></li>
+<li id="menu-item-909" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item footer__nav_item footer__nav_item-909"><a class="footer__nav_link"  href="https://www.tradelle.io/tracking-number-updates/">Tracking Number Updates</a></li>
+<li id="menu-item-910" class="menu-item menu-item-type-post_type menu-item-object-page footer__nav_item footer__nav_item-910"><a class="footer__nav_link"  href="https://www.tradelle.io/fulfillment-by-tradelle/">Fulfillment by Tradelle</a></li>
+<li id="menu-item-914" class="menu-item menu-item-type-post_type menu-item-object-page footer__nav_item footer__nav_item-914"><a class="footer__nav_link"  href="https://www.tradelle.io/product-sourcing/">Product Sourcing</a></li>
+<li id="menu-item-3011" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3011"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/best-evergreen-products-and-niches-that-sell-year-round/">Evergreen Products</a></li>
+<li id="menu-item-3006" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3006"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/a-product-research-tool-that-will-create-dropshipping-millionaires-in-2024/">Dropshipping Product Research Tool</a></li>
+<li id="menu-item-3016" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3016"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/21-best-dropshipping-suppliers-that-ship-worldwide-and-how-to-choose-the-best-one/">Find the Best Dropshipping Suppliers</a></li>
+<li id="menu-item-3060" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3060"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/15-best-ecommerce-niches-that-can-boost-your-store-sales/">Finding Niche Products</a></li>
+<li id="menu-item-3226" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3226"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/how-to-find-dropshipping-products-with-high-profit-margins/">Dropshipping Products with High Profit Margin</a></li>
+</ul>							</div>
+													<div class="footer__col_nav">
+								<h3 class="footer__title">Resources</h3>
+								<ul id="menu-resources" class="footer__nav_list"><li id="menu-item-3009" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3009"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/what-is-dropshipping-how-do-you-get-started/">How to Start Dropshipping</a></li>
+<li id="menu-item-3003" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3003"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/10-dropshipping-tips-for-running-a-profitable-business/">Dropshipping Tips</a></li>
+<li id="menu-item-3008" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3008"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/12-ways-to-increase-shopify-sales/">How to Increase Shopify Sales</a></li>
+<li id="menu-item-3012" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3012"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/e-commerce-vs-dropshipping-simplified-for-beginners/">E-Commerce vs Dropshipping</a></li>
+<li id="menu-item-3013" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3013"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/17-common-dropshipping-mistakes-beginners-should-avoid/">Common Dropshipping Mistakes</a></li>
+<li id="menu-item-3059" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3059"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/a-basic-guide-to-shopify-shipping/">Shopify Guide: Shipping</a></li>
+<li id="menu-item-3018" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3018"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/how-to-calculate-dropshipping-profit-margin/">Is Dropshipping Profitable?</a></li>
+<li id="menu-item-3015" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3015"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/how-to-run-google-ads-for-dropshipping/">How to Make Google Ads for Dropshipping</a></li>
+<li id="menu-item-3057" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3057"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/how-to-run-tiktok-ads-for-dropshipping/">How to Make TikTok Ads for Dropshipping</a></li>
+<li id="menu-item-3010" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3010"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/pros-and-cons-of-dropshipping-a-comprehensive-overview/">Is Dropshipping Worth It?</a></li>
+<li id="menu-item-3061" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3061"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/your-guide-on-how-to-find-winning-products-on-aliexpress/">How to Find Winning Products on AliExpress</a></li>
+<li id="menu-item-3210" class="menu-item menu-item-type-post_type menu-item-object-post footer__nav_item footer__nav_item-3210"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/is-dropshipping-legal/">Is Dropshipping Legal?</a></li>
+</ul>							</div>
+						
+													<div class="footer__col_nav">
+								<h3 class="footer__title">Company</h3>
+								<ul id="menu-footer-company-menu" class="footer__nav_list"><li id="menu-item-3062" class="menu-item menu-item-type-post_type menu-item-object-page footer__nav_item footer__nav_item-3062"><a class="footer__nav_link"  href="https://www.tradelle.io/blog/">Blog</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page footer__nav_item footer__nav_item-76"><a class="footer__nav_link"  href="https://www.tradelle.io/pricing/">Pricing</a></li>
+<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page footer__nav_item footer__nav_item-74"><a class="footer__nav_link"  href="https://www.tradelle.io/about-us/">About Us</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page footer__nav_item footer__nav_item-77"><a class="footer__nav_link"  href="https://www.tradelle.io/affiliate-program/">Affiliate Program</a></li>
+<li id="menu-item-3063" class="menu-item menu-item-type-custom menu-item-object-custom footer__nav_item footer__nav_item-3063"><a class="footer__nav_link"  href="https://help.tradelle.io/">Help Center</a></li>
+<li id="menu-item-3056" class="menu-item menu-item-type-post_type menu-item-object-page footer__nav_item footer__nav_item-3056"><a class="footer__nav_link"  href="https://www.tradelle.io/community/">Community</a></li>
+<li id="menu-item-913" class="menu-item menu-item-type-post_type menu-item-object-page footer__nav_item footer__nav_item-913"><a class="footer__nav_link"  href="https://www.tradelle.io/contact/">Contact</a></li>
+</ul>							</div>
+						
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__copy">© All rights reserved</div>
+			<ul id="menu-footer-legal-menu" class="footer__legal_list"><li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page footer__legal_item footer__legal_item-86"><a class="footer__legal_link"  href="https://www.tradelle.io/terms-of-use/">Terms of Use</a></li>
+<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy footer__legal_item footer__legal_item-83"><a class="footer__legal_link"  href="https://www.tradelle.io/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-87" class="borlabs-cookie-open-dialog-preferences menu-item menu-item-type-custom menu-item-object-custom footer__legal_item footer__legal_item-87"><a class="footer__legal_link"  href="#">Cookie Settings</a></li>
+</ul>			<div class="footer__label">Made with
+				<div class="footer__icon">
+					<svg class="icon icon-heart icon--size_mod"><use xlink:href="https://www.tradelle.io/wp-content/themes/tradelle/assets/images/sprite/sprite.svg#heart"></use></svg>				</div>in London
+			</div>
+		</div>
+	</div>
+</footer>
+
+</div><!-- .wrapper# -->
+
+
+<script type="rocketlazyloadscript">let daextLwcnReadyStateCheckInterval=setInterval(function(){if(document.readyState==="complete"){clearInterval(daextLwcnReadyStateCheckInterval);window.daextLwcnCookieNotice.initialize({headingsFontFamily:"'Open Sans', Helvetica, Arial, sans-serif",headingsFontWeight:"600",paragraphsFontFamily:"'Open Sans', Helvetica, Arial, sans-serif",paragraphsFontWeight:"400",strongTagsFontWeight:"600",buttonsFontFamily:"'Open Sans', Helvetica, Arial, sans-serif",buttonsFontWeight:"400",buttonsBorderRadius:"4",containersBorderRadius:"4",cookieNoticeMainMessageText:"This website uses cookies to ensure the best experience.",cookieNoticeMainMessageFontColor:"#666666",cookieNoticeMainMessageLinkFontColor:"#3875f6",cookieNoticeButton1Text:"Settings",cookieNoticeButton1Action:"1",cookieNoticeButton1Url:"",cookieNoticeButton1BackgroundColor:"#ffffff",cookieNoticeButton1BackgroundColorHover:"#ffffff",cookieNoticeButton1BorderColor:"#3875f6",cookieNoticeButton1BorderColorHover:"#3875f6",cookieNoticeButton1FontColor:"#3875f6",cookieNoticeButton1FontColorHover:"#3875f6",cookieNoticeButton2Text:"Accept",cookieNoticeButton2Action:"2",cookieNoticeButton2Url:"",cookieNoticeButton2BackgroundColor:"#3875f6",cookieNoticeButton2BackgroundColorHover:"#3875f6",cookieNoticeButton2BorderColor:"#3875f6",cookieNoticeButton2BorderColorHover:"#3875f6",cookieNoticeButton2FontColor:"#ffffff",cookieNoticeButton2FontColorHover:"#ffffff",cookieNoticeButton3Text:"Default Label",cookieNoticeButton3Action:"0",cookieNoticeButton3Url:"",cookieNoticeButton3BackgroundColor:"#3875f6",cookieNoticeButton3BackgroundColorHover:"#3875f6",cookieNoticeButton3BorderColor:"#3875f6",cookieNoticeButton3BorderColorHover:"#3875f6",cookieNoticeButton3FontColor:"#ffffff",cookieNoticeButton3FontColorHover:"#ffffff",cookieNoticeButtonDismissAction:"0",cookieNoticeButtonDismissUrl:"",cookieNoticeButtonDismissColor:"#646464",cookieNoticeContainerPosition:"2",cookieNoticeContainerWidth:"1140",cookieNoticeContainerOpacity:"1",cookieNoticeContainerBorderWidth:"0",cookieNoticeContainerBackgroundColor:"#ffffff",cookieNoticeContainerBorderColor:"#e1e1e1",cookieNoticeContainerBorderOpacity:"1",cookieNoticeContainerDropShadow:"1",cookieNoticeContainerDropShadowColor:"#242f42",cookieNoticeMask:"0",cookieNoticeMaskColor:"#242f42",cookieNoticeMaskOpacity:"0",cookieNoticeShakeEffect:"0",cookieSettingsLogoUrl:"https:\/\/tradelleprod.wpenginepowered.com\/wp-content\/uploads\/2024\/05\/fdfeee.jpg",cookieSettingsTitle:"Cookie Settings",cookieSettingsDescriptionHeader:"<p>Cookies are small piece of data sent from a website and stored on the user's computer by the user's web browser while the user is browsing. Your browser stores each message in a small file, called cookie. When you request another page from the server, your browser sends the cookie back to the server. Cookies were designed to be a reliable mechanism for websites to remember information or to record the user's browsing activity.<p><a href=\"https:\/\/tradelleprod.wpenginepowered.com\/privacy-policy\/\" target=\"_blank\">Privacy Policy<\/a>",cookieSettingsToggleOnColor:"#3875f6",cookieSettingsToggleOffColor:"#808080",cookieSettingsToggleMiscColor:"#9ab6f4",cookieSettingsToggleDisabledColor:"#e5e5e5",cookieSettingsSeparatorColor:"#e1e1e1",cookieSettingsChevronColor:"#6e6e6e",cookieSettingsExpandCloseColor:"#6e6e6e",cookieSettingsDescriptionFooter:"",cookieSettingsButton1Text:"Close",cookieSettingsButton1Action:"2",cookieSettingsButton1Url:"",cookieSettingsButton1BackgroundColor:"#ffffff",cookieSettingsButton1BackgroundColorHover:"#ffffff",cookieSettingsButton1BorderColor:"#3875f6",cookieSettingsButton1BorderColorHover:"#3875f6",cookieSettingsButton1FontColor:"#3875f6",cookieSettingsButton1FontColorHover:"#3875f6",cookieSettingsButton2Text:"Accept",cookieSettingsButton2Action:"1",cookieSettingsButton2Url:"",cookieSettingsButton2BackgroundColor:"#3875f6",cookieSettingsButton2BackgroundColorHover:"#3875f6",cookieSettingsButton2BorderColor:"#3875f6",cookieSettingsButton2BorderColorHover:"#3875f6",cookieSettingsButton2FontColor:"#ffffff",cookieSettingsButton2FontColorHover:"#ffffff",cookieSettingsHeadingsFontColor:"#222222",cookieSettingsParagraphsFontColor:"#666666",cookieSettingsLinksFontColor:"#3875f6",cookieSettingsContainerBackgroundColor:"#ffffff",cookieSettingsContainerOpacity:"1",cookieSettingsContainerBorderWidth:"0",cookieSettingsContainerBorderColor:"#e1e1e1",cookieSettingsContainerBorderOpacity:"1",cookieSettingsContainerDropShadow:"1",cookieSettingsContainerDropShadowColor:"#242f42",cookieSettingsContainerHighlightColor:"#f8f8f8",cookieSettingsMask:"1",cookieSettingsMaskColor:"#242f42",cookieSettingsMaskOpacity:"0.54",revisitConsentButtonEnable:"0",revisitConsentButtonTooltipText:"Cookie Settings",revisitConsentButtonPosition:"left",revisitConsentButtonBackgroundColor:"#3875f6",revisitConsentButtonIconColor:"#ffffff",enableGeolocation:"1",geolocationBehavior:"1",geolocationService:"1",geolocationLocale:["at","be","bg","cy","cz","dk","ee","es","fi","fr","gb","hu","ie","it","lt","lu","lv","mt","nl","pl","pt","se","si","sk"],responsiveBreakpoint:"700",cookieExpiration:3153600000,reloadPage:"0",categoryAcceptance:"1",cookieTableColumns:"[\"name\",\"expiration\",\"purpose\"]",forceCssSpecificity:"0",sections:[{"section_id":"5","name":"Strictly Necessary Cookies","description":"Cookies necessary to operate this website.","category_a":[{"category_id":"4","name":"Session Management","description":"Mandatory for site functionality.","toggle":"0","default_status":"1","priority":"1","cookies":[]},{"category_id":"5","name":"Live Chat","description":"Mandatory for site functionality","toggle":"0","default_status":"1","priority":"2","cookies":[]}]},{"section_id":"6","name":"Measurement and Performance","description":"This data helps us improve your user experience and run the site more smoothly.","category_a":[{"category_id":"6","name":"Google Analytics","description":"Helps with performance and improves user experience.","toggle":"1","default_status":"1","priority":"1","cookies":[]},{"category_id":"7","name":"Microsoft Clarity","description":"Helps with performance and improves user experience.","toggle":"1","default_status":"1","priority":"2","cookies":[]},{"category_id":"8","name":"HubSpot","description":"Helps with performance and improves user experience.","toggle":"1","default_status":"1","priority":"3","cookies":[]}]},{"section_id":"7","name":"Partnerships and Ads","description":"Cookies related to our affiliate and advertisement partners.","category_a":[{"category_id":"9","name":"Google Ads","description":"Helps with lightweight ad and affiliate management. If turned off, non-cookie-based alternatives may negatively affect the website's performance.","toggle":"1","default_status":"1","priority":"1","cookies":[]},{"category_id":"10","name":"LeadDyno Affiliate Program","description":"Helps with lightweight ad and affiliate management. If turned off, non-cookie-based alternatives may negatively affect the website's performance.","toggle":"1","default_status":"1","priority":"2","cookies":[]},{"category_id":"11","name":"Facebook Ads","description":"Helps with lightweight ad and affiliate management. If turned off, non-cookie-based alternatives may negatively affect the website's performance.","toggle":"1","default_status":"1","priority":"3","cookies":[]}]}],cookies:[],});}},10);</script><script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.tradelle.io/wp-content/cache/min/1/wp-content/plugins/honeypot/includes/js/wpa.js?ver=1731924063" id="wpascript-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wpascript-js-after">
+/* <![CDATA[ */
+wpa_field_info = {"wpa_field_name":"fmgppn4964","wpa_field_value":506307,"wpa_add_test":"no"}
+/* ]]> */
+</script>
+<script type="text/javascript" id="daextlwcn-general-js-extra">
+/* <![CDATA[ */
+var DAEXTLWCN_PHPDATA = {"nonce":"bd7cdd0e91","ajaxUrl":"https:\/\/www.tradelle.io\/wp-admin\/admin-ajax.php","nameText":"Name","expirationText":"Expiration","purposeText":"Purpose","providerText":"Provider","domainText":"Domain","typeText":"Type","sensitivityText":"Sensitivity","securityText":"Security","moreInformationText":"More Information"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.tradelle.io/wp-content/cache/min/1/wp-content/plugins/lightweight-cookie-notice/public/assets/js/production/general.js?ver=1731924063" id="daextlwcn-general-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="module" data-rocket-src="https://www.tradelle.io/wp-content/themes/tradelle/assets/js/app.js?ver=1.0" data-rocket-defer defer></script><script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" nomodule data-rocket-src="https://www.tradelle.io/wp-content/cache/min/1/wp-content/themes/tradelle/assets/js/app.js?ver=1731924063" id="main-no-module-js"></script>
+<script type="text/javascript" id="custom-js-extra">
+/* <![CDATA[ */
+var phpvars = {"ajax_url":"https:\/\/www.tradelle.io\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.tradelle.io/wp-content/cache/min/1/wp-content/themes/tradelle/custom.js?ver=1731924063" id="custom-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript">window.DAEXTLWCN_ONACCEPT = {};window.DAEXTLWCN_ONACCEPT["4"] = function(){};window.DAEXTLWCN_ONACCEPT["6"] = function(){};window.DAEXTLWCN_ONACCEPT["9"] = function(){};window.DAEXTLWCN_ONACCEPT["5"] = function(){};window.DAEXTLWCN_ONACCEPT["7"] = function(){};window.DAEXTLWCN_ONACCEPT["10"] = function(){};window.DAEXTLWCN_ONACCEPT["8"] = function(){};window.DAEXTLWCN_ONACCEPT["11"] = function(){};</script><script nitro-exclude>var Realize;(()=>{var t={506:(t,e,r)=>{var n=r(463).Z;t.exports=n},463:(t,e,r)=>{"use strict";function n(t,e){(null==e||e>t.length)&&(e=t.length);for(var r=0,n=new Array(e);r<e;r++)n[r]=t[r];return n}function o(t,e){for(var r=0;r<e.length;r++){var n=e[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}function a(t,e){!function(t,e){if(e.has(t))throw new TypeError("Cannot initialize the same private elements twice on an object")}(t,e),e.add(t)}function i(t,e,r){if(!e.has(t))throw new TypeError("attempted to get private field on non-instance");return r}r.d(e,{Z:()=>f});var l=new WeakSet,u=new WeakSet,c=new WeakSet,f=function(){function t(){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),a(this,c),a(this,u),a(this,l)}var e,r;return e=t,(r=[{key:"initialize",value:function(){var t=this;this.tParams=i(this,u,h).call(this,new URL(window.location.href)),document.querySelectorAll("a").forEach((function(e){return i(t,l,s).call(t,e)}))}}])&&o(e.prototype,r),Object.defineProperty(e,"prototype",{writable:!1}),t}();function s(t){var e=new URL(t.href);this.tParams.forEach((function(t){return e.searchParams.set(t.key,t.value)})),t.href=e}function h(t){return i(this,c,p).call(this,t).filter((function(t){return t.key.startsWith("utm_") || t.key.startsWith("afmc")}))}function p(t){var e,r=null===(e=t.search)||void 0===e?void 0:e.split("?")[1],o=null==r?void 0:r.split("&");return(null==o?void 0:o.map((function(t){var e,r,o=(e=t.split("="),r=2,function(t){if(Array.isArray(t))return t}(e)||function(t,e){var r=null==t?null:"undefined"!=typeof Symbol&&t[Symbol.iterator]||t["@@iterator"];if(null!=r){var n,o,a=[],i=!0,l=!1;try{for(r=r.call(t);!(i=(n=r.next()).done)&&(a.push(n.value),!e||a.length!==e);i=!0);}catch(t){l=!0,o=t}finally{try{i||null==r.return||r.return()}finally{if(l)throw o}}return a}}(e,r)||function(t,e){if(t){if("string"==typeof t)return n(t,e);var r=Object.prototype.toString.call(t).slice(8,-1);return"Object"===r&&t.constructor&&(r=t.constructor.name),"Map"===r||"Set"===r?Array.from(t):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?n(t,e):void 0}}(e,r)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}());return{key:o[0],value:o[1]}})))||[]}}},e={};function r(n){var o=e[n];if(void 0!==o)return o.exports;var a=e[n]={exports:{}};return t[n](a,a.exports,r),a.exports}r.d=(t,e)=>{for(var n in e)r.o(e,n)&&!r.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},r.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e);var n=r(506);Realize=n})();
+new Realize().initialize();</script>
+<script nitro-exclude>
+function getParameterByName(name, url = window.location.href) {
+  name = name.replace(/[\[\]]/g, '\\$&');
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'), results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+function setCookie(name,value,days) {
+  var expires = "";
+  if (days) {
+    var date = new Date();
+     date.setTime(date.getTime() + (days*24*60*60*1000));
+      expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "")  + expires + ";domain=.tradelle.io;path=/";
+}
+
+var ref = getParameterByName('afmc');
+if(ref) {
+  setCookie('referrer', ref, 365);
+}
+</script>
+
+
+<script nitro-exclude>
+  document.addEventListener('DOMContentLoaded', function() {
+    var menuItem = document.querySelector('a[href$="#features"]');
+    var target = document.querySelector('[data-id="features"]');
+    menuItem.addEventListener("click", function() {
+      gsap.to(window, {duration: 1, scrollTo:{y:target , offsetY:70}});
+    });
+  });
+</script>
+<script type="text/javascript" nitro-exclude>
+  console.log('nitro hack');
+  if (window.location.href.startsWith("https://www.tradelle.io/pricing/")) {
+    console.log('pricing page');
+    window.addEventListener("load", function () {
+      console.log('on load');
+      setTimeout(function() {
+        console.log('setting timeout');
+        if (window.scrollY === 0) {
+          console.log('dispatch event');
+          let event = new MouseEvent('mousemove', { 'view': window, 'bubbles': true, 'cancelable': true });
+          document.dispatchEvent(event);
+        }
+      }, 100)
+    });
+  }
+</script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
